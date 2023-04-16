@@ -3,11 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  
+  <title>Mi portafolio</title>
 </head>
 <body>
-  <h1>Mi portafolio</h1>
-  <h2>Reinhard Vicent Conde Quispe</h2>
+  <!-- SECCION INICIO -->
+  <section id="inicio">
+    <div class="contenido">
+      <header>
+        <div class="contenido-header">
+          <!-- Logo -->
+          <div class="logo">Ludwig</div>
+          <!-- Barra navegacion -->
+          <nav id="nav" class="" >
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#sobremi">Sobre mi</a></li>
+              <li><a href="#portafolio">Portafolio</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </nav>
+          <!-- Iconos menu responsive -->
+          <div id="icono-nav" onclick="openMenu()">
+            <i class="bi bi-list"></i>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="redes">
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/Fenharel1" target="_blank"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </header>
+      <div class="presentacion">
+        <p class="saludos">Bienvenido</p>
+        <h2>Soy <span>Reinhard Conde</span>, Ingeniero informatico</h2>
+        <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, libero repudiandae dignissimos laboriosam
+           minus quia dolor molestiae blanditiis amet, explicabo.</p>
+        <a href="">Ir a portafolio</a>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <script src="/js/app.js"></script>
 </body>
 </html>
