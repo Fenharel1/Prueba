@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Mukta:wght@300;400;600;700;800&family=Open+Sans&family=Work+Sans:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mukta;
+}
+
+/* Fuentes: Lobster, Work Sans, Mukta */
+
+#inicio{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/img/fondoInicio.jpg') ;
+  background-position: center center;
+  background-size: cover;
+  color: #fafafa;
+}
+
+#inicio header{
+  padding: 10px 100px;
+  height: 48px;
+  background-color: #000;
+  color: white;
+  font-size: 1.2em;
+}
+
+#inicio .logo{
+  font-family: Lobster;
+  text-transform: capitalize;
+}
+
+#inicio header .contenido-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+#inicio ul{
+  text-align: center;
+  display: flex;
+  list-style: none;
+}
+
+#inicio ul li a{
+  padding: 0 20px;
+  transition: .5s;
+  color: white;
+  text-decoration: none;
+}
+
+#inicio ul li:hover a{
+  color: cornflowerblue;
+}
+
+#icono-nav{
+  display: none;
+}
+
+#inicio .redes a{ 
+  color: white;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+
+#inicio .redes a:nth-child(1):hover{
+  color:burlywood;
+}
+#inicio .redes a:nth-child(2):hover{
+  color: cornflowerblue;
+}
+#inicio .redes a:nth-child(3):hover{
+  color: orange;
+}
+
+#inicio .presentacion{
+  overflow: hidden;
+  padding: 100px 10px;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 80vh;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#inicio .presentacion .saludos{
+  font-size: 44px;
+  font-weight: bold;
+  letter-spacing: 15px;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+#inicio .presentacion h2{
+  font-size: 60px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+#inicio .presentacion h2 span{
+  font-size: 50px;
+  color: cornflowerblue;
+}
+
+#inicio .presentacion .descripcion{
+  max-width: 770px;
+  margin-bottom: 25px;
+}
+
+#inicio .presentacion a{
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+#inicio .presentacion a:hover{
+  background-color: cornflowerblue;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  #icono-nav{
+    display: block; 
+  }
+
+  .redes{
+    display: none;
+  }
+
+  #inicio header{
+    padding: 10px 50px;
+  }
+
+  .contenido-header nav{
+    display: none;
+  }
+
+  nav.responsive {
+    display: block;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    position: absolute;
+    top: 48px;
+    left: 0px;
+    padding: 10px 0;
+  }
+
+  nav.responsive ul{
+    display: block !important;
+    text-align: center;
+  }
+  
+  nav.responsive ul li{
+    margin: 5px 0;
+  }
+
+  #inicio .presentacion h2{
+    font-size: 30px;
+  }
+
+  #inicio .presentacion h2 span{
+    font-size: 25px;
+  }
+
+  #inicio .presentacion .saludos{
+    font-size: 30px;
+  }
+
+  #inicio .presentacion .descripcion{
+    font-size: 16px;
+  }
+
+}
